@@ -1,0 +1,11 @@
+@import url("../../style.css");
+
+.contactMeBtn {
+    width: 8rem;
+    background-color: transparent;
+    border-color: var(--primary-color);
+    outline: 0.5;
+    padding: 0.5rem;
+    color: black;
+    
+}
