@@ -1,11 +1,152 @@
 @import url("../../style.css");
 
-.contactMeBtn {
+
+
+
+.personal-desc h1 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+}
+
+.personal-desc p {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.personal-desc span {
+    color: var(--primary);
+}
+
+.contact-me-btn {
     width: 8rem;
+    border-width: 0.1rem;
     background-color: transparent;
-    border-color: var(--primary-color);
-    outline: 0.5;
+    border-color: var(--primary);
+    outline: none;
     padding: 0.5rem;
     color: black;
-    
+    font-family: 'Fira Code';
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.contact-me-btn:hover {
+    background-color: var(--primary-op);
+    color: black;
+    outline: none;
+}
+
+.top_image_div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_logo {
+    position: absolute;
+    width: 30vmin;
+    top: 10%;
+    z-index: 1;
+    aspect-ratio: 1;
+}
+
+.profile_image {
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid var(--primary);
+}
+
+
+
+.current-work {
+    padding: 8px;
+    border: 1px solid var(--gray);
+    color: rgba(0, 0, 0, 0.727);
+    margin: 0 auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -1px;
+    z-index: 5;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.current-work a:hover {
+    color: black;
+}
+
+.current-work::before {
+    content: "";
+    display: inline-block;
+    aspect-ratio: 1;
+    width: 16px;
+    background-color: var(--primary-op);
+    border: 1px solid var(--primary);
+}
+
+.qoute_text {
+    padding: 32px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.qoute {
+    border: 1px solid var(--gray);
+    position: relative;
+    margin: 0;
+}
+
+
+
+
+
+.qoute::before,
+.qoute::after {
+    content: '"';
+    position: absolute;
+    color: black;
+    font-size: 64px;
+    font-weight: 700;
+    background-image: linear-gradient(white, white);
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+}
+
+
+
+.qoute::before {
+    top: -30px;
+    left: 16px;
+}
+
+.qoute::after {
+    bottom: -64px;
+    right: 16px;
+}
+
+.quote_author {
+    position: absolute;
+    color: var(--gray);
+    border: 1px solid var(--gray);
+    padding: 8px;
+    right: -1px;
+    font-size: 16px;
+}
+
+.quote_author::before {
+    content: "- ";
+}
+
+.dots {
+    position: absolute;
+    top: 40%;
+    width: 12vmin;
+    left: 70%;
+    z-index: 4;
 }

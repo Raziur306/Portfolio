@@ -1,5 +1,10 @@
 :root {
-    --primary-color: #C778DD;
+    --primary: hsl(287 60% 65%);
+    --primary-op: hsl(287 60% 65%/0.1);
+    --gray: hsl(219 14% 71%);
+    --gray-op: hsl(219 14% 71%/0.1);
+    --background: hsl(218 12% 18%);
+    --white: hsl(0 0% 100%);
 }
 
 @font-face {
@@ -7,6 +12,12 @@
     src: url("./assets/fonts/FiraCode-Regular.ttf");
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Fira Code';
+    height: 100%;
 }

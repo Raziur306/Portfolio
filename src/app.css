@@ -1,0 +1,17 @@
+.media_header_line {
+    width: 1px;
+    height: 33vh;
+    background-color: var(--gray);
+    display: block;
+}
+
+.media_header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 16px;
+    gap: 8px;
+    top: 0px;
+}
