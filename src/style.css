@@ -20,4 +20,84 @@
 body {
     font-family: 'Fira Code';
     height: 100%;
+    /* background-color: var(--background);
+    color: var(--white); */
+
+}
+
+/* project card */
+.project_card {
+    border: 1px solid gray;
+}
+
+.project_card .project_image {
+    height: 185px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid gray;
+
+}
+
+.project_card .project_technology {
+    padding: 8px;
+    text-align: start;
+    border-bottom: 1px solid gray;
+}
+
+.project_card .project_title {
+    padding: 8px;
+    margin-top: 5px;
+    text-align: start;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.project_card .project_location {
+    padding: 8px;
+}
+
+.project_card .project_card_btn {
+    display: flex;
+}
+
+.project_card .project_card_btn a {
+    outline: 1px solid var(--primary);
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+    transition: 10ms ease;
+}
+
+.project_card .project_card_btn a:hover {
+    background-color: #c778dda2;
+}
+
+.project_card .project_card_btn a:active {
+    color: var(--primary);
+}
+
+
+/* footer style */
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.footer_border_line {
+    width: 100%;
+    border-top: 2px solid gray;
+}
+
+.media_section h3 {
+    text-align: right;
+}
+
+.footer_copyright {
+    text-align: center;
+}
+
+.footer_img {
+    width: 80px;
 }
