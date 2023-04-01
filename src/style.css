@@ -101,3 +101,68 @@ body {
 .footer_img {
     width: 80px;
 }
+
+.footer .email {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer .email:hover {
+    color: rgb(60, 58, 58);
+}
+
+.skill_card {
+    border: 1px solid gray;
+    transition: transform 0.2s;
+}
+
+.skill_card:hover {
+    cursor: pointer;
+    transform: scale(1.009);
+}
+
+.skill_card_name {
+    border-bottom: 1px solid gray;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.skill_list_name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: satart;
+    padding: 8px;
+    list-style: none;
+}
+
+.fun_fact {
+    border: 1px solid gray;
+    padding: 8px;
+}
+
+/* contact list */
+.contat_list_container {
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+.contact_ul {
+    list-style: none;
+    gap: 4px;
+}
+
+.contact_ul a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.contact_ul a:hover {
+    color: black;
+}
+
+.contact_title {
+    font-weight: 800;
+    margin-bottom: 10px;
+}

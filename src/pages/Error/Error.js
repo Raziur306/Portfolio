@@ -1,8 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
+import { AnimatedTitle } from '../../utils/AnimatedTitle'
 
 function Error() {
   return (
-    <div>404 not found</div>
+    <div>
+      <Helmet><title>{AnimatedTitle} RAZIUR | error</title></Helmet>
+
+      404 not found</div>
   )
 }
 

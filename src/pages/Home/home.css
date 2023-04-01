@@ -21,15 +21,14 @@
 
 .contact-me-btn {
     width: 8rem;
-    border-width: 0.1rem;
+    border: 1px solid var(--primary);
     background-color: transparent;
-    border-color: var(--primary);
-    outline: none;
     padding: 0.5rem;
     color: black;
     font-family: 'Fira Code';
     cursor: pointer;
     transition: 0.3s ease;
+    text-decoration: none;
 
 }
 
@@ -150,3 +149,24 @@
     left: 70%;
     z-index: 4;
 }
+
+.about_description {
+    margin-bottom: 40px;
+}
+
+.learn_more_about_btn {
+    width: 8rem;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    padding: 0.5rem;
+    color: black;
+    font-family: 'Fira Code';
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.learn_more_about_btn:hover {
+    background-color: var(--primary-op);
+}
+

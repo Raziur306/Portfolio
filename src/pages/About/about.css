@@ -1,0 +1,28 @@
+@import url("../../style.css");
+
+
+
+.about .who {
+    text-align: start;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.about_bref {
+    margin: auto;
+}
+
+.about_bref .about_description {
+    justify-content: center;
+    text-align: justify;
+
+}
+
+.about_bref_container {
+    margin-top: 10px;
+}
+
+.about_bref_container .profile {
+    border-bottom: 1px solid var(--primary);
+
+}

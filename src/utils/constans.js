@@ -59,3 +59,50 @@ export const projectList = [
 
 
 ]
+
+
+
+//skills
+
+export const technologies = {
+    title: "Technologies",
+    list: ["Android", "Blockchain", "Ethereum", "Web 3.0"]
+}
+
+export const languages = {
+    title: "Languages",
+    list: ["C++", "JAVA", "Kotlin", "JavaScript", "Solidity"]
+}
+
+export const tools = {
+    title: "Tools",
+    list: ["Android Studio", "VS Code", "Git & Github", "Hardhat", "Ganache"]
+}
+
+export const frameworks = {
+    title: "Framworks",
+    list: ["Jetpack Compose", "React", "Express.js", "Ethers.js"]
+}
+
+export const database = {
+    title: "Database",
+    list: ['Room', 'SQLite', 'Firebase', "MongoDB", "MySQL"]
+}
+
+
+export const other = {
+    title: "Other",
+    list: ["HTML", 'CSS', 'Node.js']
+}
+
+
+export const funFacts = ["I love biking.", "I love to travel.", "I like winter more than summer."]
+
+
+//short descripton about me
+export const aboutMe = <p className='about_description'>
+    A skilled self-taught full-stack developer with expertise in <b>Android development</b>,Web technologies including  <b>React</b>, <b>Express</b>, and <b>MongoDB</b>, as well as <b>Blockchain</b> and <b>Smart contracts</b>. <br />
+    <br />I'm based in Dhaka, Bangladesh, and have a passion for developing <b>Mobile Applications</b> and next generation <b>(Blockchain)</b> responsive <b>Websites</b>. With years of experience helping clients establish their online presence, I stay up-to-date with the latest technologies and frameworks to ensure optimal solutions for my clients.
+
+
+</p>

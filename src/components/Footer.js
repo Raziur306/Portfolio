@@ -11,7 +11,7 @@ function Footer() {
         <div className='footer'>
             <div className='footer_border_line'></div>
             <Grid container className='footer_container' justifyContent={'center'}>
-                <Grid xs={5}>
+                <Grid item xs={5}>
                     <Box sx={{ mt: '30px' }}>
                         <Stack direction={'row'} spacing={2} sx={{ mb: '10px' }}>
                             <img className='footer_img' src={logo} alt="Footer Logo" />
@@ -21,7 +21,7 @@ function Footer() {
                         <h5>Full Stack Devloper</h5>
                     </Box>
                 </Grid>
-                <Grid className='media_section' xs={5} sx={{ mt: '30px', justifyContent: 'right' }}>
+                <Grid xs={5} item className='media_section' sx={{ mt: '30px', justifyContent: 'right' }}>
                     <Box sx={{ flexDirection: 'row', justifyContent: 'center' }}>
                         <h3>Media</h3>
                         <Stack direction={'row'} justifyContent='right'>
