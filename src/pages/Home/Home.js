@@ -27,7 +27,7 @@ function Home() {
                         <h1>Raziur Rahaman is a <span>Full Stack Developer</span></h1>
                         <p>Blending technology and creativity, he specializes in developing innovative Mobile Applications and Websites.</p>
                         <Link to="/contact" alt="Contact" className='contact-me-btn'>Contact Me !!</Link>
-                        <a target='_blank' className='download-cv-btn' href="www.google">Download CV</a>
+                        <a rel="noreferrer" target='_blank' className='download-cv-btn' href="https://drive.google.com/file/d/180xNVxo-a_f7NkkdAeBMkwT5wsbawlHU/view?usp=share_link">Download CV</a>
                     </div>
                 </div>
             </Grid>
