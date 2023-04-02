@@ -27,8 +27,8 @@ function Footer() {
                         <Stack direction={'row'} justifyContent='right'>
                             <IconButton disableRipple style={{ background: 'none' }} color='inherit' target={"_blank"} href="https://www.github.com/Raziur306"><GitHubIcon /></IconButton>
                             <IconButton disableRipple style={{ background: 'none' }} color='inherit' target={"_blank"} href="https://www.linkedin.com/in/raziur-rahaman"><LinkedInIcon /></IconButton>
-                            <IconButton disableRipple style={{ background: 'none' }} color='inherit' href="https://twitter.com/Raziur306"><TwitterIcon /></IconButton>
-                            <IconButton disableRipple style={{ background: 'none' }} color='inherit' href="https://www.facebook.com/raziur.rahman01"><FacebookIcon /></IconButton>
+                            <IconButton disableRipple style={{ background: 'none' }} color='inherit' target={"_blank"} href="https://twitter.com/Raziur306"><TwitterIcon /></IconButton>
+                            <IconButton disableRipple style={{ background: 'none' }} color='inherit' target={"_blank"} href="https://www.facebook.com/raziur.rahman01"><FacebookIcon /></IconButton>
                         </Stack>
                     </Box>
 

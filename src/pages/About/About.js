@@ -17,7 +17,7 @@ function About() {
       <Helmet><title>{symbol} RAZIUR | about</title></Helmet>
       <Box sx={{ mt: '45px' }} xs={5} className="projects_header">
         <h2 className='h2'>about</h2>
-        <p className='who'>Who am i?</p>
+        <p className='who'>Who am I?</p>
       </Box>
       <Grid className='about_bref_container' gap={3} container justifyContent='center'>
         <Grid item xs={'auto'} >

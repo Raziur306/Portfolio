@@ -12,6 +12,7 @@ import { AnimatedTitle } from '../../utils/AnimatedTitle';
 import SkillCard from '../../components/SkillCard';
 import ContactComponent from '../../components/Component.Contact';
 import about_me_anim from '../../assets/about_me_anim.gif'
+import { Link } from 'react-router-dom';
 
 function Home() {
     const symbol = AnimatedTitle()
@@ -25,7 +26,8 @@ function Home() {
                     <div className='personal-desc'>
                         <h1>Raziur Rahaman is a <span>Full Stack Developer</span></h1>
                         <p>Blending technology and creativity, he specializes in developing innovative Mobile Applications and Websites.</p>
-                        <a href="/contact" alt="Contact" className='contact-me-btn'>Contact Me !!</a>
+                        <Link to="/contact" alt="Contact" className='contact-me-btn'>Contact Me !!</Link>
+                        <a target='_blank' className='download-cv-btn' href="www.google">Download CV</a>
                     </div>
                 </div>
             </Grid>
@@ -61,7 +63,7 @@ function Home() {
                 <h2 className='h2'>projects</h2>
             </Grid>
             <Grid item xs={6} sx={{ display: 'flex', alignItems: 'center' }} justifyContent="center" >
-                <a className='projects_link' href="/projects">View all ~~{'>'}</a>
+                <Link className='projects_link' to="/projects">View all ~~{'>'}</Link>
 
             </Grid>
         </Grid>
@@ -106,7 +108,7 @@ function Home() {
             <Grid item xs={8}>
                 <Box >
                     {aboutMe}
-                    <a className='learn_more_about_btn' href="/about" alt="About Me">Learn More ~~{'>'}</a>
+                    <Link className='learn_more_about_btn' to="/about" alt="About Me">Learn More ~~{'>'}</Link>
                 </Box>
 
             </Grid>

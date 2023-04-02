@@ -18,3 +18,18 @@
     top: 0px;
 }
 
+.toolbar {
+    background-color: var(--background);
+}
+
+.large_toolbar_box span {
+    color: white;
+}
+
+.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1ka5eyc-MuiPaper-root-MuiMenu-paper-MuiPopover-paper {
+    background-color: var(--background);
+}
+
+.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-1ka5eyc-MuiPaper-root-MuiMenu-paper-MuiPopover-paper span {
+    color: white;
+}

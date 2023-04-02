@@ -20,14 +20,15 @@
 body {
     font-family: 'Fira Code';
     height: 100%;
-    /* background-color: var(--background);
-    color: var(--white); */
+    background-color: var(--background);
+    color: var(--white);
 
 }
 
 /* project card */
 .project_card {
     border: 1px solid gray;
+    max-width: 360px;
 }
 
 .project_card .project_image {
@@ -64,6 +65,7 @@ body {
 .project_card .project_card_btn a {
     outline: 1px solid var(--primary);
     padding: 10px;
+    color: white;
     text-decoration: none;
     margin: 10px;
     transition: 10ms ease;
@@ -71,12 +73,20 @@ body {
 
 .project_card .project_card_btn a:hover {
     background-color: #c778dda2;
+    color: white;
 }
 
 .project_card .project_card_btn a:active {
     color: var(--primary);
 }
 
+.projects_link {
+    color: var(--gray);
+}
+
+.projects_link:hover {
+    color: white;
+}
 
 /* footer style */
 
@@ -108,7 +118,7 @@ body {
 }
 
 .footer .email:hover {
-    color: rgb(60, 58, 58);
+    color: white;
 }
 
 .skill_card {
@@ -153,13 +163,21 @@ body {
     gap: 4px;
 }
 
+.contact_ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+
 .contact_ul a {
     text-decoration: none;
     color: var(--gray);
 }
 
 .contact_ul a:hover {
-    color: black;
+    color: white;
 }
 
 .contact_title {

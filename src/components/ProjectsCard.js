@@ -23,8 +23,8 @@ function ProjectsCard(param) {
             <h3 className='project_title'>{title}</h3>
             <p className='project_location'>{project_location}</p>
             <div className='project_card_btn'>
-                {(is_live && <a href={live_link}>Live ~~{'>'}</a>)}
-                {(is_github && <a href={github_link}>Github {'<'}-{'>'}</a>)}
+                {(is_live && <a href={live_link} rel="noreferrer" target='_blank'>Live ~~{'>'}</a>)}
+                {(is_github && <a href={github_link} rel="noreferrer" target='_blank'>Github {'<'}-{'>'}</a>)}
             </div>
 
 

@@ -19,12 +19,15 @@
     color: var(--primary);
 }
 
-.contact-me-btn {
+.contact-me-btn,
+.download-cv-btn {
+
+    margin-top: 30px;
     width: 8rem;
     border: 1px solid var(--primary);
     background-color: transparent;
     padding: 0.5rem;
-    color: black;
+    color: whitesmoke;
     font-family: 'Fira Code';
     cursor: pointer;
     transition: 0.3s ease;
@@ -32,11 +35,17 @@
 
 }
 
-.contact-me-btn:hover {
+.contact-me-btn:hover,
+.download-cv-btn:hover {
     background-color: var(--primary-op);
-    color: black;
+    color: white;
     outline: none;
 }
+
+.download-cv-btn {
+    margin-left: 10px;
+}
+
 
 .top_image_div {
     position: relative;
@@ -63,7 +72,7 @@
 .current-work {
     padding: 8px;
     border: 1px solid var(--gray);
-    color: rgba(0, 0, 0, 0.727);
+    color: gray;
     margin: 0 auto;
     display: inline-flex;
     justify-content: center;
@@ -72,11 +81,15 @@
     top: -1px;
     z-index: 5;
     gap: 8px;
-    font-weight: 500;
+    font-weight: 600;
+}
+
+.current-work a {
+    color: whitesmoke;
 }
 
 .current-work a:hover {
-    color: black;
+    color: var(--primary);
 }
 
 .current-work::before {
@@ -109,10 +122,10 @@
 .qoute::after {
     content: '"';
     position: absolute;
-    color: black;
+    color: white;
     font-size: 64px;
     font-weight: 700;
-    background-image: linear-gradient(white, white);
+    background-image: linear-gradient(var(--background), var(--background));
     background-size: 100% 40%;
     background-repeat: no-repeat;
 }
@@ -131,7 +144,7 @@
 
 .quote_author {
     position: absolute;
-    color: rgb(53, 51, 51);
+    color: white;
     border: 1px solid var(--gray);
     padding: 15px;
     right: -1px;
@@ -159,7 +172,7 @@
     border: 1px solid var(--primary);
     background-color: transparent;
     padding: 0.5rem;
-    color: black;
+    color: white;
     font-family: 'Fira Code';
     cursor: pointer;
     transition: 0.3s ease;
@@ -168,5 +181,5 @@
 
 .learn_more_about_btn:hover {
     background-color: var(--primary-op);
+    color: white;
 }
-

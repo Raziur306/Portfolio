@@ -61,3 +61,13 @@
 .project_card:hover {
     transform: scale(1.05)
 }
+
+.filter_option .filtered_btns button {
+    border: 1px solid var(--primary);
+    color: white;
+}
+
+.filter_option .filtered_btns .active {
+    background-color: var(--primary);
+    color: white;
+}

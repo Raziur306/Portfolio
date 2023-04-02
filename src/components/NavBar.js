@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 import {
     AppBar, Toolbar, Box, Stack, IconButton, Drawer, List, ListItem, ListItemText, Menu,
-    MenuItem,
-    CssBaseline
+    MenuItem
 } from '@mui/material';
-import navLogo from '../assets/icon_dark.svg'
+import navLogo from '../assets/icon_white.svg'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Container } from '@mui/system';
 
 function NavBar() {
     const location = useLocation()
@@ -21,8 +19,8 @@ function NavBar() {
         setAnchorEl(null);
     };
 
-    return <AppBar justifyContent={'center'} elevation={0} position='static'  >
-        <Toolbar sx={{ justifyContent: "space-between", bgcolor: 'white' }}>
+    return <AppBar className='appbar' justifyContent={'center'} elevation={0} position='static'  >
+        <Toolbar className='toolbar' sx={{ justifyContent: "space-between" }}>
             <Link to='/' edge='start' size='small' color='inherit'>
                 <img src={navLogo} alt="Web Logo" />
             </Link>
@@ -54,40 +52,40 @@ function NavBar() {
                     open={open}
                     onClose={handleMenuClose}
                 >
-                    <MenuItem onClick={handleMenuClose}>
-                        <Link to='/' color='inherit' underline='none'>
+                    <MenuItem sx={{ bgcolor: 'transparent' }} onClick={handleMenuClose}>
+                        <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/' ? "#B975CC" : "white" }} to='/'>
                             <span>#</span>home
                         </Link>
                     </MenuItem>
-                    <MenuItem onClick={handleMenuClose}>
-                        <Link to='/projects' color='inherit' underline='none'>
-                            <span>#</span>projects
+                    <MenuItem sx={{ bgcolor: 'transparent' }} onClick={handleMenuClose}>
+                        <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/projects' ? "#B975CC" : "white" }} to='/projects'>
+                            <span >#</span>projects
                         </Link>
                     </MenuItem>
-                    <MenuItem onClick={handleMenuClose}>
-                        <Link to='/about' color='inherit' underline='none'>
+                    <MenuItem sx={{ bgcolor: 'transparent' }} onClick={handleMenuClose}>
+                        <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/about' ? "#B975CC" : "white" }} to='/about'>
                             <span>#</span>about-me
                         </Link>
                     </MenuItem>
-                    <MenuItem onClick={handleMenuClose}>
-                        <Link to='/contact' color='inherit' underline='none'>
+                    <MenuItem sx={{ bgcolor: 'transparent' }} onClick={handleMenuClose}>
+                        <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/contact' ? "#B975CC" : "white" }} to='/contact'>
                             <span>#</span>contact
                         </Link>
                     </MenuItem>
                 </Menu>
             </Box>
 
-            <Box sx={{ display: { xs: 'none', sm: 'flex' }, gap: 2 }} >
-                <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/' ? "#B975CC" : "gray" }} to='/'>
+            <Box className='large_toolbar_box' sx={{ display: { xs: 'none', sm: 'flex' }, gap: 2 }} >
+                <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/' ? "#B975CC" : "white" }} to='/'>
                     <span>#</span>home
                 </Link>
-                <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/projects' ? "#B975CC" : "gray" }} to='/projects'>
-                    <span>#</span>projects
+                <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/projects' ? "#B975CC" : "white" }} to='/projects'>
+                    <span >#</span>projects
                 </Link>
-                <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/about' ? "#B975CC" : "gray" }} to='/about'>
+                <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/about' ? "#B975CC" : "white" }} to='/about'>
                     <span>#</span>about-me
                 </Link>
-                <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/contact' ? "#B975CC" : "gray" }} to='/contact'>
+                <Link disableUnderline style={{ textDecoration: 'none', color: location.pathname === '/contact' ? "#B975CC" : "white" }} to='/contact'>
                     <span>#</span>contact
                 </Link>
             </Box>
